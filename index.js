@@ -13,7 +13,6 @@ connectTOMongoDB('mongodb://127.0.0.1:27017/short-url')
 
 app.set("view engine","ejs");
 app.set('views',path.resolve("./views"));
-console.log("first"+ path.resolve())
 app.use(express.json());
 
 app.get('/test',async (req,res)=>{
